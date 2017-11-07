@@ -3,13 +3,13 @@
 # How to install lib
 
 ```bash
-yarn add resize-image-canvas
+yarn add resize-image-canvas@latest
 ```
 
 or 
 
 ```bash
-npm install resize-image-canvas
+npm install resize-image-canvas@latest
 ```
 
 # Using ES5/ES6,ES7,ES*
@@ -76,7 +76,7 @@ $('.resize-action').on('click', function(e){
 
 # Exemplo
 
-See you exemple here! ![Exemple Project using VanilhaJS](https://github.com/Thadeu/resize-image-to-fit)
+See you exemple here! [Exemple Project using VanilhaJS](https://github.com/Thadeu/resize-image-to-fit)
 
 ![captura de tela 2017-11-06 as 18 34 34](https://user-images.githubusercontent.com/77889/32465128-2be43768-c321-11e7-9cd0-5ec4abedc8a2.png)
 
