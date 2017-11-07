@@ -1,8 +1,8 @@
 {
-  "name": "webpack-library-starter",
+  "name": "resize-image-canvas",
   "version": "0.3.0",
-  "description": "Produce universal library with webpack and es6",
-  "main": "lib/library.js",
+  "description": "Library from resize images using canvas javascript",
+  "main": "lib/resize-image-canvas.min.js",
   "scripts": {
     "build": "webpack --env build",
     "dev": "webpack --progress --colors --watch --env dev",
@@ -25,21 +25,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/krasimir/webpack-library-starter.git"
+    "url": "https://github.com/Thadeu/resize-image-canvas.git"
   },
   "keywords": [
     "webpack",
     "es6",
-    "starter",
     "library",
-    "universal",
-    "umd",
-    "commonjs"
+    "resize",
+    "canvas"
   ],
   "author": "Krasimir Tsonev",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/krasimir/webpack-library-starter/issues"
+    "url": "https://github.com/Thadeu/resize-image-canvas/issues"
   },
-  "homepage": "https://github.com/krasimir/webpack-library-starter"
+  "homepage": "https://github.com/Thadeu/resize-image-canvas",
+  "dependencies": {
+  }
 }
