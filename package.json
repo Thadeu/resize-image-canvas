@@ -2,7 +2,7 @@
   "name": "resize-image-canvas",
   "version": "0.3.0",
   "description": "Library from resize images using canvas javascript",
-  "main": "lib/resize-image-canvas.min.js",
+  "main": "./index.js",
   "scripts": {
     "build": "webpack --env build",
     "dev": "webpack --progress --colors --watch --env dev",
