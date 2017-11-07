@@ -1,6 +1,6 @@
 # Resize Image to Canvas
 
-# HOW TO INSTALL
+# How to install lib
 
 ```bash
 yarn add resize-image-canvas
