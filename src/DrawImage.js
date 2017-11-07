@@ -1,4 +1,4 @@
-export class DrawImage {
+export default class DrawImage {
 
   constructor({ sourceImage, maxWidth, maxHeight }) {
     this.sourceImage = sourceImage
@@ -7,8 +7,6 @@ export class DrawImage {
     this.imageWidth = this.sourceImage.width
     this.imageHeight = this.sourceImage.height
     this.canvas = document.createElement('canvas')
-
-    this.getDimensions = this.getDimensions.bind(this)
   }
 
   toDataURL() {

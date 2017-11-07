@@ -1,6 +1,6 @@
 {
   "name": "resize-image-canvas",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Library from resize images using canvas javascript",
   "main": "./index.js",
   "scripts": {
@@ -41,5 +41,6 @@
   },
   "homepage": "https://github.com/Thadeu/resize-image-canvas",
   "dependencies": {
+    "babel-polyfill": "^6.26.0"
   }
 }

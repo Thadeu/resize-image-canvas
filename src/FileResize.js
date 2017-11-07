@@ -1,8 +1,8 @@
-import { DrawImage } from './DrawImage'
+import DrawImage from './DrawImage'
 
-export class FileResize {
-
+export default class FileResize {
   constructor({ boxPreview, files, width, height, loading }) {
+
     this.boxPreview = boxPreview
     this.files = files
     this.width = width
@@ -12,14 +12,15 @@ export class FileResize {
     this.call()
   }
 
-  createBoxPreview() {
+  createBoxImage() {
     let boxImage = document.createElement('div')
 
     boxImage.classList.add('box-image')
+    boxImage.style = 'display: flex; justify-content: center; align-items: center; text-align: center;'
     boxImage.innerHTML = this.loading
     this.boxPreview.appendChild(boxImage)
 
-    return this.boxPreview
+    return boxImage
   }
 
   call() {
@@ -29,7 +30,7 @@ export class FileResize {
         let sourceImage = new Image()
         let targetImage = new Image()
 
-        const boxPreview = this.createBoxPreview()
+        const boxImage = this.createBoxImage()
 
         reader.onload = (e) => {
           /**
@@ -48,8 +49,8 @@ export class FileResize {
             }).toDataURL()
 
             // joga a imagem dentro do box de previews redimensionadas
-            boxPreview.innerHTML = ''
-            boxPreview.appendChild(targetImage)
+            boxImage.innerHTML = ''
+            boxImage.appendChild(targetImage)
           }
         }
 
@@ -59,3 +60,13 @@ export class FileResize {
   }
 }
 // end
+
+window.FileResize = ({ boxPreview, files, width, height, loading }) => {
+  new FileResize({
+    boxPreview,
+    files,
+    width,
+    height,
+    loading
+  })
+}
