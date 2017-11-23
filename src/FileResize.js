@@ -1,13 +1,14 @@
 import DrawImage from './DrawImage'
 
 export default class FileResize {
-  constructor({ boxPreview, files, width, height, loading }) {
+  constructor({ boxPreview, files, width, height, loading, callback }) {
 
     this.boxPreview = boxPreview
     this.files = files
     this.width = width
     this.height = height
     this.loading = loading || 'carregando...'
+    this.callback = callback
 
     this.call()
   }
@@ -55,18 +56,23 @@ export default class FileResize {
         }
 
         reader.readAsDataURL(file)
+
+        if (callback){
+          this.callback()
+        }
       }
     })
   }
 }
 // end
 
-window.FileResize = ({ boxPreview, files, width, height, loading }) => {
+window.FileResize = ({ boxPreview, files, width, height, loading, callback }) => {
   new FileResize({
     boxPreview,
     files,
     width,
     height,
-    loading
+    loading,
+    callback
   })
 }
