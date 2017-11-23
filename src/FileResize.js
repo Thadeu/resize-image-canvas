@@ -55,11 +55,11 @@ export default class FileResize {
           }
         }
 
-        reader.readAsDataURL(file)
-
         if (callback){
           this.callback()
         }
+
+        reader.readAsDataURL(file)
       }
     })
   }
