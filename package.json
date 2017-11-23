@@ -1,6 +1,6 @@
 {
   "name": "resize-image-canvas",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Library from resize images using canvas javascript",
   "main": "./index.js",
   "scripts": {

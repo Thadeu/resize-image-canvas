@@ -26,7 +26,9 @@ document.querySelector('.resize-action').addEventListener('click', function(e){
       files: document.querySelector('.input-files').files, 
       width: 200, 
       height: 200,
-      loading: 'carregando...' // (opcional)
+      loading: 'carregando...', // (opcional)
+      callback: function(){
+      }
     })
   })
 }
@@ -68,7 +70,9 @@ $('.resize-action').on('click', function(e){
       files: $('.input-files').files, 
       width: 200, 
       height: 200,
-      loading: 'carregando...' // (opcional)
+      loading: 'carregando...', // (opcional)
+      callback: function(){
+      }
     })
   })
 }
