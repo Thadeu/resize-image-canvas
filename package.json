@@ -1,7 +1,7 @@
 {
   "name": "resize-image-canvas",
-  "version": "0.5.1",
-  "description": "Library from resize images using canvas javascript",
+  "version": "0.5.2",
+  "description": "Library from resize images using canvas modern Javascript",
   "main": "./index.js",
   "scripts": {
     "build": "webpack --env build",
@@ -9,6 +9,7 @@
     "test": "mocha --compilers js:babel-core/register --colors ./test/*.spec.js",
     "test:watch": "mocha --compilers js:babel-core/register --colors -w ./test/*.spec.js"
   },
+  "dependencies": {},
   "devDependencies": {
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
@@ -21,7 +22,8 @@
     "eslint-loader": "1.7.1",
     "mocha": "3.3.0",
     "webpack": "3.1.0",
-    "yargs": "7.1.0"
+    "yargs": "7.1.0",
+    "babel-polyfill": "^6.26.0"
   },
   "repository": {
     "type": "git",
@@ -32,15 +34,13 @@
     "es6",
     "library",
     "resize",
-    "canvas"
+    "canvas",
+    "javascript resize images"
   ],
-  "author": "Krasimir Tsonev",
+  "author": "Thadeu Esteves Jr",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Thadeu/resize-image-canvas/issues"
   },
-  "homepage": "https://github.com/Thadeu/resize-image-canvas",
-  "dependencies": {
-    "babel-polyfill": "^6.26.0"
-  }
+  "homepage": "https://github.com/Thadeu/resize-image-canvas"
 }
